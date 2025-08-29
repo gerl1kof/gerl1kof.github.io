@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAN Ads</title>
+</head>
+<body style="margin:0; padding:0; display:flex; justify-content:center; align-items:center; height:100vh;">
+    <div id="yandex_rtb"></div>
+
+    <script>
+        window.yaContextCb = window.yaContextCb || [];
+        window.yaContextCb.push(() => {
+            Ya.Context.AdvManager.render({
+                blockId: "R-M-17021208-1", // 🔴 сюда вставь свой ID рекламного блока
+                renderTo: "yandex_rtb",
+                async: true
+            });
+        });
+    </script>
+    <script src="https://yandex.ru/ads/system/context.js" async></script>
+</body>
+</html>
